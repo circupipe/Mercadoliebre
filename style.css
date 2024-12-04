@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Proxima Nova",Arial,sans-serif,sans-serif
+}
+header{
+    background-color: #ffe600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 18%; 
+}
+
+header img{
+    width: auto;
+    height: 2.4rem;
+}
+
+.box-1{
+    padding-inline: 2rem;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: start;
+}
+
+.enviar{
+    background-color: aqua;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dire{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-2{
+    padding-inline: 2rem;
+    background-color: rgb(226, 43, 119);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-grow: 2;
+    justify-content: space-between;
+    font-size: .9rem;
+}
+
+header div form{
+    background-color: blue;
+    padding: 1rem;
+
+}
+
+.cate{
+    background-color: tomato;
+    padding-top: .9rem;
+}
+
+.box-3{
+    padding-inline: 2rem;
+    background-color: rgb(43, 226, 89);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex-grow: 1;
+    justify-content: space-between;
+
+}
+
+.subs{
+    background-color: burlywood;
+    display: flex ;
+    align-items: center;
+    padding-top: .5rem;
+
+}
+
+.sub{
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: .6rem;
+    min-width: fit-content;
+    font-size: .8rem;
+}
+
+.login{
+    background-color: cornflowerblue;
+    font-size: .9rem;
+} 
+
+.login img{
+    background-color: cornflowerblue;
+    font-size: .9rem;
+    
+} 

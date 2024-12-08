@@ -6,13 +6,18 @@
     text-decoration: none;
     font-family:"Proxima Nova",Arial,sans-serif,sans-serif
 }
+
+
+
+
 header{
   
     background-color: #ffe600;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    /* padding-inline: 18%; */
+    padding-inline: 3%;
+    padding-block: .7rem;
 
 }
 
@@ -22,69 +27,87 @@ header img{
 }
 
 .box-1{
-    padding-inline: 2rem;
-    background-color: blueviolet;
+    padding-right: 2.4rem;
     display: flex;
     width: fit-content;
     flex-direction: column;
-/*     flex-grow: 1; */
-    align-items: start;
-
+    align-items: flex-start;
 }
 
 .enviar{
-    background-color: aqua;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: flex-end;
+    height: 3rem;
+}
+
+.enviar img{
+    width: 1.3rem;
 }
 
 .dire{
-    background-color: azure;
     display: flex;
     flex-direction: column;
+    font-size: .9rem;
+    align-items: start;
 }
 
 .box-2{
-    padding-inline: 2rem;
-    background-color: rgb(226, 43, 119);
     display: flex;
     flex-direction: column;
-    align-items: start;
-/*     flex-grow: 2; */
-    justify-content: center;
-    font-size: .9rem;
-    height: fit-content;
-}
-
-header div form{
-    background-color: blue;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
- 
+    font-size: .9rem;
+    width: fit-content;
+    height: 5.2rem;
+    padding-right: 7rem;
 
 }
+
+.search{
+    display: flex;
+    border: 1px solid #ccc;
+    color: #ccc; 
+    justify-content: space-around;
+    align-items: center;
+    bold
+}
+
+
+.search-box { 
+    min-width: 33.2rem; 
+    height: 2.5rem;
+    padding-inline: 1rem;
+    border: 1px solid white;
+    border-right: none;
+    color: #ffffff;
+}
+.search-button { 
+    height: 2.3rem;
+    padding-inline: 1rem;
+    border: 1px solid white;
+    border-left: none;
+    color: #ccc;
+    background-color: white
+}
+  
 
 .cate{
-    background-color: tomato;
     padding-top: .9rem;
+    min-width: 35rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box-3{
-    padding-inline: 2rem;
-    background-color: rgb(43, 226, 89);
     display: flex;
     flex-direction: column;
-    align-items: end;
-/*     flex-grow: 1; */
-    justify-content: space-between;
+    align-items: flex-start;
 
 }
 
 .subs{
-    background-color: burlywood;
     display: flex ;
     align-items: center;
     padding-top: .5rem;
@@ -92,22 +115,85 @@ header div form{
 }
 
 .sub{
+    display: flex;
     width: fit-content;
-    background-color: blueviolet;
+    background: linear-gradient(90deg, rgba(74,22,149,1) 0%, rgba(199,0,200,1) 100%);
     border-radius: 20px;
     padding: .6rem;
     min-width: fit-content;
     font-size: .8rem;
     align-items: end;
+    color: white;
 }
 
 .login{
-    background-color: cornflowerblue;
     font-size: .9rem;
+    min-width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 } 
 
 .login img{
-    background-color: cornflowerblue;
-    font-size: .9rem;
+    width: 1.7rem;
     
 } 
+
+/* algo que separe */
+
+main {
+
+    width: 100%;
+    height: 100vh;
+    padding-inline: 18%;
+/*     max-width: 50rem; */
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "aside article article article"
+    "aside article article article"
+    "aside article article article"
+    "aside article article article"
+    "footer footer footer footer" ;
+
+    background-color: tomato;
+
+}
+
+header{
+    grid-area: header;
+    background-color: #ffe600;
+}
+
+main {
+    grid-area: main;
+    background-color: seagreen;
+}
+
+aside {
+    grid-area: aside;
+    background-color: darkorchid;
+}
+
+article {
+    grid-area: article;
+    background-color: firebrick;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (9, 1fr) ;
+    gap: 1rem;
+    padding: 1rem;
+
+    
+ 
+}
+
+footer {
+    grid-area: footer;
+    background-color: goldenrod;
+}main
+
+.artdiv {
+    border: 1px solid tomato;
+}

@@ -7,9 +7,6 @@
     font-family:"Proxima Nova",Arial,sans-serif,sans-serif
 }
 
-
-
-
 header{
   
     background-color: #ffe600;
@@ -73,7 +70,6 @@ header img{
     bold
 }
 
-
 .search-box { 
     min-width: 33.2rem; 
     height: 2.5rem;
@@ -91,7 +87,6 @@ header img{
     background-color: white
 }
   
-
 .cate{
     padding-top: .9rem;
     min-width: 35rem; 
@@ -139,6 +134,42 @@ header img{
     
 } 
 
+#ofertas{
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2rem;
+    justify-content: start;
+}
+
+.hidden{
+    width: 58.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#ofertas{
+    padding-inline: 18%;
+    grid-area: section;
+    background-color: #fff;
+    height: 9rem;
+}
+
+.hidden-content{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: .9rem;
+}
+
+.hidden img{
+    width: 3rem;
+    height: 3rem; 
+}
+
 /* algo que separe */
 
 main {
@@ -146,54 +177,69 @@ main {
     width: 100%;
     height: 100vh;
     padding-inline: 18%;
-/*     max-width: 50rem; */
     display: grid;
     grid-template-areas: 
-    "header header header header"
-    "main main main main"
     "aside article article article"
     "aside article article article"
     "aside article article article"
     "aside article article article"
     "footer footer footer footer" ;
+    background-color: #e7e7e7;
 
-    background-color: tomato;
-
-}
-
-header{
-    grid-area: header;
-    background-color: #ffe600;
-}
-
-main {
-    grid-area: main;
-    background-color: seagreen;
 }
 
 aside {
     grid-area: aside;
+    width: 18rem;
     background-color: darkorchid;
 }
 
+
+
 article {
+    width: fit-content;
     grid-area: article;
-    background-color: firebrick;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat (9, 1fr) ;
     gap: 1rem;
     padding: 1rem;
-
-    
+    padding-top: 2rem;
  
+}
+
+.artdiv {
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.07);
+/*     display: flex; */
+}
+
+.newprice{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.artdiv img{
+width: 284px;
+height: auto;
+border-radius: 8px;
+}
+
+.artdiv:hover{
+    text-decoration: underline #1f72f8;
+    cursor: pointer;
 }
 
 footer {
     grid-area: footer;
     background-color: goldenrod;
-}main
-
-.artdiv {
-    border: 1px solid tomato;
 }
+
+
+
+
+
+

@@ -256,12 +256,12 @@ article {
 
 .off{
     font-size: .7rem; 
-    color: green;
+    color: #00a650;
 }
 
 .cuots{
     font-size: .9rem;
-    color: green;
+    color: #00a650;
     padding-bottom: 1rem;
 }
 
@@ -270,18 +270,20 @@ article {
     align-items: center;
     justify-content: start;
     padding-bottom: 1rem;
-}
-
-.free{
-    color: green;
     font-weight: bolder;
-
+    color: #00a650;
+    font-size: .73rem;
 }
 
+.mañana{
+    background-color: #e7e7e7;
+    margin-right: .5rem;
+    padding: .15rem;
+    border-radius: 3px;
+}
 
-
-.artdiv:hover{
-    text-decoration: underline #1f72f8;
+a{
+    text-decoration: none;
     cursor: pointer;
 }
 

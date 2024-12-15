@@ -1,3 +1,11 @@
+:root{
+    --aside-title: 1rem;
+    --aside-size: .9rem;
+
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -191,7 +199,7 @@ main {
 aside {
     grid-area: aside;
     width: 18rem;
-    background-color: darkorchid;
+    background-color: gray;
 }
 
 
@@ -287,11 +295,36 @@ a{
     cursor: pointer;
 }
 
+/* -----------------asidee */
+
+aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem;
+    background-color: white;
+    border-radius: 4px;
+    margin-block: 2rem;
+    
+
+}
+
+.full{
+    width: auto;
+    height: 1rem;
+
+}
+
+
 footer {
     grid-area: footer;
     background-color: goldenrod;
 }
-
 
 
 
